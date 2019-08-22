@@ -12,9 +12,9 @@ This module will create the following:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| home\_prefix | The `root` S3 prefix for this user. If provided, the user will only be able to access objects under this prefix. | string | `""` | no |
-| s3\_bucket | The name of the S3 bucket that this user should have access to. | string | n/a | yes |
-| server\_id | The server ID of the Transfer Server (e.g. s-12345678) | string | n/a | yes |
+| bucket\_name | The name of the S3 bucket that this user should have access to. | string | n/a | yes |
+| home\_prefix | The *root* S3 prefix for this user. The default is the same as the `user_name`. | string | `""` | no |
+| server\_id | The server ID of the Transfer Server (e.g. `s-12345678`) | string | n/a | yes |
 | ssh\_keys | A list of the public keys that will be used by the server to authenticate the user. At least one must be provided. | list | `[]` | no |
 | tags | A mapping of tags to assign to the resources created by this module. | map | `{}` | no |
 | user\_name | The name used for log in to your SFTP server. | string | n/a | yes |

@@ -1,17 +1,17 @@
 variable "server_id" {
-  description = "The server ID of the Transfer Server (e.g. s-12345678)"
+  description = "The server ID of the Transfer Server (e.g. `s-12345678`)"
 }
 
 variable "user_name" {
   description = "The name used for log in to your SFTP server."
 }
 
-variable "s3_bucket" {
+variable "bucket_name" {
   description = "The name of the S3 bucket that this user should have access to."
 }
 
 variable "home_prefix" {
-  description = "The `root` S3 prefix for this user. If provided, the user will only be able to access objects under this prefix."
+  description = "The *root* S3 prefix for this user. The default is the same as the `user_name`."
   default     = ""
 }
 
