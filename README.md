@@ -19,4 +19,12 @@ This module will create the following:
 | tags | A mapping of tags to assign to the resources created by this module. | map | `{}` | no |
 | user\_name | The name used for log in to your SFTP server. | string | n/a | yes |
 
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| role\_arn | The ARN of the IAM Role. Used by some resources to attach policies. |
+| role\_id | The ID of the IAM Role. Used by some resources to attach policies. |
+| role\_name | The name of the IAM Role. Used by some resources to attach policies. |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
